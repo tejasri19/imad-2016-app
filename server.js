@@ -8,6 +8,13 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+app.get('/teja1', function (req, res) {
+  res.sendFile('123');
+});
+
+app.get('/teja2', function (req, res) {
+  res.sendFile('654');
+});
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
