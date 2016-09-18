@@ -9,11 +9,11 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('tejasri', function (req, res) {
+app.get('/tejasri', function (req, res) {
   res.sendFile('name');
 });
 
-app.get('nampally', function (req, res) {
+app.get('/nampally', function (req, res) {
   res.sendFile('surname');
 });
 
